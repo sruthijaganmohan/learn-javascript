@@ -1,5 +1,8 @@
-let myLeads = ["www.awesomelead.com"]
-
+let myLeads = `["www.awesomelead.com"]`
+myLeads = JSON.parse(myLeads)
+myLeads.push("www.epicleads.com")
+myLeads = JSON.stringify(myLeads)
+console.log(typeof myLeads)
 
 
 const inputEl = document.getElementById("input-el")
